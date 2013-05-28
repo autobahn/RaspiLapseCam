@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3849BC3817554B4E00EA0CCC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3849BC3517554B4E00EA0CCC /* Icon-72.png */; };
+		3849BC3917554B4E00EA0CCC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3849BC3617554B4E00EA0CCC /* Icon.png */; };
+		3849BC3A17554B4E00EA0CCC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3849BC3717554B4E00EA0CCC /* Icon@2x.png */; };
 		38A3E77F174D6B9B00093067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A3E77E174D6B9B00093067 /* UIKit.framework */; };
 		38A3E781174D6B9B00093067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A3E780174D6B9B00093067 /* Foundation.framework */; };
 		38A3E783174D6B9B00093067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A3E782174D6B9B00093067 /* CoreGraphics.framework */; };
@@ -30,7 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38A3E77B174D6B9B00093067 /* ledBorgSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ledBorgSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3849BC3517554B4E00EA0CCC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		3849BC3617554B4E00EA0CCC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3849BC3717554B4E00EA0CCC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		38A3E77B174D6B9B00093067 /* LEDBorg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBorg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A3E77E174D6B9B00093067 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38A3E780174D6B9B00093067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		38A3E782174D6B9B00093067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,7 +89,7 @@
 		38A3E77C174D6B9B00093067 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38A3E77B174D6B9B00093067 /* ledBorgSwitcher.app */,
+				38A3E77B174D6B9B00093067 /* LEDBorg.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +121,9 @@
 		38A3E785174D6B9B00093067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3849BC3517554B4E00EA0CCC /* Icon-72.png */,
+				3849BC3617554B4E00EA0CCC /* Icon.png */,
+				3849BC3717554B4E00EA0CCC /* Icon@2x.png */,
 				38F4B612175243D30092E876 /* Icons */,
 				38A3E786174D6B9B00093067 /* ledBorgSwitcher-Info.plist */,
 				38A3E787174D6B9B00093067 /* InfoPlist.strings */,
@@ -159,7 +168,7 @@
 			);
 			name = ledBorgSwitcher;
 			productName = ledBorgSwitcher;
-			productReference = 38A3E77B174D6B9B00093067 /* ledBorgSwitcher.app */;
+			productReference = 38A3E77B174D6B9B00093067 /* LEDBorg.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -207,6 +216,9 @@
 				38F4B61D175243F20092E876 /* iconSettings.png in Resources */,
 				38F4B61E175243F20092E876 /* iconSettings@2x.png in Resources */,
 				38F4B6201753517B0092E876 /* appSettings.plist in Resources */,
+				3849BC3817554B4E00EA0CCC /* Icon-72.png in Resources */,
+				3849BC3917554B4E00EA0CCC /* Icon.png in Resources */,
+				3849BC3A17554B4E00EA0CCC /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +277,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Moore (792P2X2KCQ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -279,8 +291,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				ONLY_ACTIVE_ARCH = YES;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				ONLY_ACTIVE_ARCH = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EDEB572F-9669-4C16-A9C0-066F02265A26";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +310,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Moore (792P2X2KCQ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EDEB572F-9669-4C16-A9C0-066F02265A26";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -319,7 +332,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ledBorgSwitcher/ledBorgSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "ledBorgSwitcher/ledBorgSwitcher-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LEDBorg;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -330,7 +343,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ledBorgSwitcher/ledBorgSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "ledBorgSwitcher/ledBorgSwitcher-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LEDBorg;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
