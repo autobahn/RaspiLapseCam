@@ -1,0 +1,53 @@
+Steps to get BerryCam to run on your Raspberry Pi and iOS Device
+----------------------------------------------------------------
+
+Make sure that you have the camera module for the Raspberry Pi installed. If you need more information on how to do this, visit http://www.raspberrypi.org/camera/
+Once the camera has been installed, please make sure that you have Python. If you are using Raspbian OS, then this should be installed already.
+
+http://www.raspberrypi.org/faqs
+
+ 
+
+Installing BerryCam on Raspberry Pi
+-----------------------------------
+
+First of all, we will need to find the IP address of the Raspberry Pi on your network. Start LXTerminal on the Raspberry Pi using the icon on the desktop. Or if you use an SSH client you can connect to this from another machine using your username and password. Recommended SSH clients for Mac are the standard MacOSX Terminal app, or on Windows something like Putty. http://www.putty.org/
+
+To get this information type:
+
+ifconfig
+This will return the IP address. Take a note of this and using the settings panel within the app, enter these details into the address field. The port number, as default is set to 8000 although advanced users may decide to change this is necessary.
+
+The username is usually pi for the device. To connect using SSH:
+
+ssh pi@XX.XX.XX.XX
+and press (where the XX’s is the IP address) and supply your password at the following prompt. Once logged in use the following commands to download the necessary Python code to run on your Raspberry Pi.
+
+Download and install the Python script into an easy to locate location. The /home directory is recommended (it’s easier to find)
+
+cd /home
+wget https://bitbucket.org/fotosyn/fotosynlabs/src/45addfce22d11e477879560521a79e5715caa024/BerryCam/berryCam.py
+
+You can also download the same script here if you’d rather do this manually:
+https://bitbucket.org/fotosyn/fotosynlabs/src/45addfce22d11e477879560521a79e5715caa024/BerryCam/berryCam.py
+
+To check this has been downloaded and unpacked, issue the command:
+
+ls
+This will list files currently in home. You will notice the new Python berryCam.py file. This is needed to provide the link between the iOS device and the Raspberry Pi.
+
+ 
+
+Using BerryCam
+--------------
+
+Once you have entered the IP address, berryCam.py needs to be run as a Python process in order to provide the necessary links to allow the BerryCam iOS app to trigger the camera, provide previews and save files. To run simply enter:
+
+sudo python /home/berryCam.py &
+The Python script will run in the background and you will see the following message:
+
+B E R R Y C A M -- Listening on port 8000
+Please ensure your BerryCam App is installed and running on your iOS Device
+Tap the refresh button within the BerryCam app on your iOS device. If your device has been recognised you will see the Connected message and the refresh icon will change to a camera icon. Pressing this will trigger the camera on the Raspberry Pi. In the terminal window you will see some activity as the Raspberry Pi handles the requests.
+
+After a short pause, the image will then appear in your iOS device.
