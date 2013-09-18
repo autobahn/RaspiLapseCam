@@ -73,7 +73,7 @@ fileSerial = 1
 while True:
     
     d = datetime.now()
-    if d.hour > 2:
+    if d.hour:
         
         # Set FileSerialNumber to 000X using four digits
         fileSerialNumber = "%04d" % (fileSerial)
