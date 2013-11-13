@@ -3,6 +3,7 @@
 #  raspiLapseCam.py
 #
 #  Created by James Moore on 28/07/2013.
+#  Modified by James Moore on 13/11/2013.
 #  Copyright (c) 2013 Fotosyn. All rights reserved.
 #
 #  Raspberry Pi is a trademark of the Raspberry Pi Foundation.
