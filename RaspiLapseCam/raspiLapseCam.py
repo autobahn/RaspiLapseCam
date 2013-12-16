@@ -51,6 +51,7 @@
 import os
 import time
 import RPi.GPIO as GPIO
+import logging
 from datetime import datetime
 
 # Grab the current datetime which will be used to generate dynamic folder names
@@ -67,6 +68,11 @@ initMins = "%02d" % (d.minute)
 folderToSave = "timelapse_" + str(initYear) + str(initMonth) + str(initDate) + str(initHour) + str(initMins)
 os.mkdir(folderToSave)
 
+# Set up a log file to store activities for any checks.
+logging.basicConfig(filename=str(folderToSave) + ".log",level=logging.DEBUG)
+logging.debug(" R A S P I L A P S E C A M -- Started Log for " + str(folderToSave))
+logging.debug(" Support at http://fotosyn.com/timelapse/")
+
 # Set the initial serial for saved images to 1
 fileSerial = 1
 
@@ -74,7 +80,7 @@ fileSerial = 1
 while True:
     
     d = datetime.now()
-    if d.hour:
+    if d.hour < 99:
         
         # Set FileSerialNumber to 000X using four digits
         fileSerialNumber = "%04d" % (fileSerial)
@@ -91,6 +97,9 @@ while True:
         # Capture the image using raspistill. Set to capture with added sharpening, auto white balance and average metering mode
         # Change these settings where you see fit and to suit the conditions you are using the camera in
         os.system("raspistill -w " + str(imgWidth) + " -h " + str(imgHeight) + " -o " + str(folderToSave) + "/" + str(fileSerialNumber) + "_" + str(hour) + str(mins) +  ".jpg  -sh 40 -awb auto -mm average -v")
+
+	# Write out to log file
+	logging.debug(' Image saved: ' + str(folderToSave) + "/" + str(fileSerialNumber) + "_" + str(hour) + str(mins) +  ".jpg")
 
         # Increment the fileSerial
         fileSerial += 1
