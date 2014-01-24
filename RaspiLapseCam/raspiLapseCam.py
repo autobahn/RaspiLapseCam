@@ -44,8 +44,8 @@
 
 # sudo kill XXXX (XXXX = process number)
 
-# Based on your settings the application will no begin capturing images
-# saving them to your chose file location (same as current location of this file as default.
+# Based on your settings the application will now begin capturing images
+# saving them to your chosen file location (same as current location of this file as default.
 
 # Import some frameworks
 import os
