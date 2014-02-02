@@ -60,7 +60,8 @@ LEDborg Express allows you to control your LEDBorg for Raspberry Pi directly fro
 
 The webserver will start with message 'Running... Serving on port XXXX'
 
-9. Navigate in any web browser on a desktop, smartphone or tablet to the IP address you found earlier on http:XXX.XXX.XXX.XXX:XXXX (the last four XXXX after the colon is the port number which as default is 8000)
+9. Navigate in any web browser on a desktop, smartphone or tablet to the IP address you found earlier. The last four XXXX after the colon is the port number which as default is 8000
+> http:XXX.XXX.XXX.XXX:XXXX/console.html
 
 10. Touch or click on the swatches to mix the colours to change the colour of the LEDs on the LEDBorg.
 
