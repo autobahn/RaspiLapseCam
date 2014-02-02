@@ -36,17 +36,20 @@ LEDborg Express allows you to control your LEDBorg for Raspberry Pi directly fro
 ##Getting Started
 1. Follow installation instructions at http://www.piborg.com/ledborg/install
 2. Open Terminal on Raspberry Pi. Type 
-	ifconfig
+>	ifconfig
 to find the IP Address of your Raspberry in XXX.XXX.XXX.XXX format. Take a note of this.
 3. If you are running headless, then simply connect to your Pi using the Terminal app of your choice.
 4. On your Raspberry Pi, CD to the directory wher you wish to install the application.
 5. In terminal type 
-	sudo wget https://bitbucket.org/fotosyn/fotosynlabs/src/89d19de1a15e7d540606eb3d46853455ecaddb7d/LEDBorg-Express/ledborg-express.zip
+> sudo wget https://bitbucket.org/fotosyn/fotosynlabs/src/89d19de1a15e7d540606eb3d46853455ecaddb7d/LEDBorg-Express/ledborg-express.zip
 6. Unzip this folder using 
-	unzip ledborg-express.zip 
+> unzip ledborg-express.zip 
 (if you don't have zip installed try using sudo apt-get install zip)
-7. Once extracted you'll have anew folder called ledborg-express. Type cd ledborg-express to move into this folder.
-8. Start the application by typing sudo python ledborg.py - the webserver will start with message Running... Serving on port XXXX
+7. Once extracted you'll have anew folder called ledborg-express. Type 
+> cd ledborg-express to move into this folder.
+8. Start the application by typing 
+> sudo python ledborg.py
+The webserver will start with message 'Running... Serving on port XXXX'
 9. Navigate in any web browser on a desktop, smartphone or tablet to the IP address you found earlier on http:XXX.XXX.XXX.XXX:XXXX (the last four XXXX after the colon is the port number which as default is 8000)
 10. Touch or click on the swatches to mix the colours to change the colour of the LEDs on the LEDBorg.
 
