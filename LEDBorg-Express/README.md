@@ -52,8 +52,8 @@ LEDborg Express allows you to control your LEDBorg for Raspberry Pi directly fro
 6. Unzip this folder. If you don't have zip installed try using - sudo apt-get install zip 
 > unzip ledborg-express.zip 
 
-7. Once extracted you'll have anew folder called ledborg-express. Type: 
-> cd ledborg-express to move into this folder.
+7. Once extracted you'll have anew folder called ledborg-express. To move into this folder type: 
+> cd ledborg-express
 
 8. Start the application by typing:
 > sudo python ledborg.py
