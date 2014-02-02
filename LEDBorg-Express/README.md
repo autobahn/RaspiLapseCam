@@ -49,8 +49,7 @@ LEDborg Express allows you to control your LEDBorg for Raspberry Pi directly fro
 5. In terminal type: 
 > sudo wget https://bitbucket.org/fotosyn/fotosynlabs/src/89d19de1a15e7d540606eb3d46853455ecaddb7d/LEDBorg-Express/ledborg-express.zip
 
-6. Unzip this folder. If you don't have zip installed try using 
-> sudo apt-get install zip 
+6. Unzip this folder. If you don't have zip installed try using - sudo apt-get install zip 
 > unzip ledborg-express.zip 
 
 7. Once extracted you'll have anew folder called ledborg-express. Type: 
